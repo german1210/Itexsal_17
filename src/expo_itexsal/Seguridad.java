@@ -16,6 +16,33 @@ public class Seguridad extends javax.swing.JFrame {
      */
     public Seguridad() {
         initComponents();
+        Desabilitar();
+    }
+    
+    void Desabilitar(){
+        pir.setEnabled(false);
+        pir_1.setEnabled(false);
+        pir_2.setEnabled(false);
+        pir_3.setEnabled(false);
+        pir_4.setEnabled(false);
+        pane_1.setEnabled(false);
+        visu.setEnabled(false);
+        visu_1.setEnabled(false);
+        visu_2.setEnabled(false);
+        visu_3.setEnabled(false);
+    }
+    
+    void Habilitar(){
+        pir.setEnabled(true);
+        pir_1.setEnabled(true);
+        pir_2.setEnabled(true);
+        pir_3.setEnabled(true);
+        pir_4.setEnabled(true);
+        pane_1.setEnabled(true);
+        visu.setEnabled(true);
+        visu_1.setEnabled(true);
+        visu_2.setEnabled(true);
+        visu_3.setEnabled(true);
     }
 
     /**
@@ -27,21 +54,226 @@ public class Seguridad extends javax.swing.JFrame {
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
 
+        jLabel1 = new javax.swing.JLabel();
+        jSeparator1 = new javax.swing.JSeparator();
+        jPanel1 = new javax.swing.JPanel();
+        jButton1 = new javax.swing.JButton();
+        jButton2 = new javax.swing.JButton();
+        jSeparator2 = new javax.swing.JSeparator();
+        jSeparator3 = new javax.swing.JSeparator();
+        jButton7 = new javax.swing.JButton();
+        pir = new javax.swing.JPanel();
+        pir_1 = new javax.swing.JButton();
+        pir_2 = new javax.swing.JButton();
+        pir_3 = new javax.swing.JButton();
+        pir_4 = new javax.swing.JButton();
+        visu = new javax.swing.JPanel();
+        visu_1 = new javax.swing.JButton();
+        visu_2 = new javax.swing.JButton();
+        visu_3 = new javax.swing.JButton();
+        pane_1 = new javax.swing.JPanel();
+        jMenuBar1 = new javax.swing.JMenuBar();
+        jMenu1 = new javax.swing.JMenu();
+
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
+
+        jLabel1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagenes/Expo_17/icon, tienda.png"))); // NOI18N
+        jLabel1.setText("Nombre de la Tienda");
+
+        jPanel1.setBorder(javax.swing.BorderFactory.createTitledBorder("Seguridad"));
+
+        jButton1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagenes/Expo_17/Start_37108.png"))); // NOI18N
+        jButton1.setBorder(null);
+        jButton1.setBorderPainted(false);
+        jButton1.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton1ActionPerformed(evt);
+            }
+        });
+
+        jButton2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagenes/Expo_17/stop.png"))); // NOI18N
+        jButton2.setBorder(null);
+        jButton2.setBorderPainted(false);
+        jButton2.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton2ActionPerformed(evt);
+            }
+        });
+
+        javax.swing.GroupLayout jPanel1Layout = new javax.swing.GroupLayout(jPanel1);
+        jPanel1.setLayout(jPanel1Layout);
+        jPanel1Layout.setHorizontalGroup(
+            jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(jPanel1Layout.createSequentialGroup()
+                .addContainerGap()
+                .addComponent(jButton1, javax.swing.GroupLayout.PREFERRED_SIZE, 37, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(26, 26, 26)
+                .addComponent(jButton2)
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+        );
+        jPanel1Layout.setVerticalGroup(
+            jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addComponent(jButton2)
+            .addComponent(jButton1)
+        );
+
+        jSeparator3.setOrientation(javax.swing.SwingConstants.VERTICAL);
+
+        jButton7.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagenes/Expo_17/casa,volver.png"))); // NOI18N
+
+        pir.setBorder(javax.swing.BorderFactory.createTitledBorder("Sensores Pir"));
+
+        pir_1.setIcon(new javax.swing.ImageIcon("/home/ger/NetBeansProjects/Expo_Itexsal/src/Imagenes/Expo_17/7963pir_bb.ico")); // NOI18N
+        pir_1.setText("Pir1");
+        pir_1.setHorizontalAlignment(javax.swing.SwingConstants.RIGHT);
+
+        pir_2.setIcon(new javax.swing.ImageIcon("/home/ger/NetBeansProjects/Expo_Itexsal/src/Imagenes/Expo_17/7963pir_bb.ico")); // NOI18N
+        pir_2.setText("Pir2");
+
+        pir_3.setIcon(new javax.swing.ImageIcon("/home/ger/NetBeansProjects/Expo_Itexsal/src/Imagenes/Expo_17/7963pir_bb.ico")); // NOI18N
+        pir_3.setText("Pir3");
+
+        pir_4.setIcon(new javax.swing.ImageIcon("/home/ger/NetBeansProjects/Expo_Itexsal/src/Imagenes/Expo_17/7963pir_bb.ico")); // NOI18N
+        pir_4.setText("Pir4");
+
+        javax.swing.GroupLayout pirLayout = new javax.swing.GroupLayout(pir);
+        pir.setLayout(pirLayout);
+        pirLayout.setHorizontalGroup(
+            pirLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(pirLayout.createSequentialGroup()
+                .addContainerGap()
+                .addComponent(pir_1)
+                .addGap(18, 18, 18)
+                .addComponent(pir_2)
+                .addGap(18, 18, 18)
+                .addComponent(pir_3)
+                .addGap(18, 18, 18)
+                .addComponent(pir_4)
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+        );
+        pirLayout.setVerticalGroup(
+            pirLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(pirLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                .addComponent(pir_1)
+                .addComponent(pir_2)
+                .addComponent(pir_3)
+                .addComponent(pir_4))
+        );
+
+        visu.setBorder(javax.swing.BorderFactory.createTitledBorder("Visualizacion"));
+
+        visu_1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagenes/Expo_17/eye_icon-icons.com_54399.png"))); // NOI18N
+
+        visu_2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagenes/Expo_17/otro ojo.png"))); // NOI18N
+
+        visu_3.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagenes/Expo_17/otro eyes.png"))); // NOI18N
+
+        javax.swing.GroupLayout visuLayout = new javax.swing.GroupLayout(visu);
+        visu.setLayout(visuLayout);
+        visuLayout.setHorizontalGroup(
+            visuLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, visuLayout.createSequentialGroup()
+                .addContainerGap(28, Short.MAX_VALUE)
+                .addGroup(visuLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addComponent(visu_3)
+                    .addComponent(visu_2)
+                    .addComponent(visu_1))
+                .addGap(28, 28, 28))
+        );
+        visuLayout.setVerticalGroup(
+            visuLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(visuLayout.createSequentialGroup()
+                .addGap(26, 26, 26)
+                .addComponent(visu_1)
+                .addGap(18, 18, 18)
+                .addComponent(visu_2)
+                .addGap(18, 18, 18)
+                .addComponent(visu_3)
+                .addContainerGap(42, Short.MAX_VALUE))
+        );
+
+        pane_1.setBorder(javax.swing.BorderFactory.createTitledBorder("Sistema de Seguridad"));
+
+        javax.swing.GroupLayout pane_1Layout = new javax.swing.GroupLayout(pane_1);
+        pane_1.setLayout(pane_1Layout);
+        pane_1Layout.setHorizontalGroup(
+            pane_1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGap(0, 0, Short.MAX_VALUE)
+        );
+        pane_1Layout.setVerticalGroup(
+            pane_1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGap(0, 290, Short.MAX_VALUE)
+        );
+
+        jMenu1.setText("Menu");
+        jMenuBar1.add(jMenu1);
+
+        setJMenuBar(jMenuBar1);
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
         layout.setHorizontalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 400, Short.MAX_VALUE)
+            .addGroup(layout.createSequentialGroup()
+                .addContainerGap()
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addComponent(jLabel1, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                    .addComponent(jSeparator1)
+                    .addGroup(layout.createSequentialGroup()
+                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addGroup(layout.createSequentialGroup()
+                                .addComponent(jPanel1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 235, Short.MAX_VALUE)
+                                .addComponent(pir, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                .addGap(120, 120, 120)
+                                .addComponent(jButton7))
+                            .addGroup(layout.createSequentialGroup()
+                                .addComponent(pane_1, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                                .addGap(9, 9, 9)
+                                .addComponent(jSeparator3, javax.swing.GroupLayout.PREFERRED_SIZE, 11, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                .addGap(4, 4, 4)
+                                .addComponent(visu, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                            .addComponent(jSeparator2))
+                        .addContainerGap())))
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 300, Short.MAX_VALUE)
+            .addGroup(layout.createSequentialGroup()
+                .addComponent(jLabel1)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addComponent(jSeparator1, javax.swing.GroupLayout.PREFERRED_SIZE, 10, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addComponent(jPanel1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(pir, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addGroup(layout.createSequentialGroup()
+                        .addGap(13, 13, 13)
+                        .addComponent(jButton7)))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addComponent(jSeparator2, javax.swing.GroupLayout.PREFERRED_SIZE, 10, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(layout.createSequentialGroup()
+                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addComponent(visu, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(pane_1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                        .addGap(0, 0, Short.MAX_VALUE))
+                    .addComponent(jSeparator3))
+                .addContainerGap())
         );
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
+
+    private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
+        // TODO add your handling code here:
+        Habilitar();
+    }//GEN-LAST:event_jButton1ActionPerformed
+
+    private void jButton2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton2ActionPerformed
+        // TODO add your handling code here:
+        Desabilitar();
+    }//GEN-LAST:event_jButton2ActionPerformed
 
     /**
      * @param args the command line arguments
@@ -79,5 +311,25 @@ public class Seguridad extends javax.swing.JFrame {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
+    private javax.swing.JButton jButton1;
+    private javax.swing.JButton jButton2;
+    private javax.swing.JButton jButton7;
+    private javax.swing.JLabel jLabel1;
+    private javax.swing.JMenu jMenu1;
+    private javax.swing.JMenuBar jMenuBar1;
+    private javax.swing.JPanel jPanel1;
+    private javax.swing.JSeparator jSeparator1;
+    private javax.swing.JSeparator jSeparator2;
+    private javax.swing.JSeparator jSeparator3;
+    private javax.swing.JPanel pane_1;
+    private javax.swing.JPanel pir;
+    private javax.swing.JButton pir_1;
+    private javax.swing.JButton pir_2;
+    private javax.swing.JButton pir_3;
+    private javax.swing.JButton pir_4;
+    private javax.swing.JPanel visu;
+    private javax.swing.JButton visu_1;
+    private javax.swing.JButton visu_2;
+    private javax.swing.JButton visu_3;
     // End of variables declaration//GEN-END:variables
 }

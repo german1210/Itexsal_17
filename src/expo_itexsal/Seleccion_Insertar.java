@@ -58,6 +58,11 @@ public class Seleccion_Insertar extends javax.swing.JFrame {
         jButton2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagenes/Expo_17/short.png"))); // NOI18N
 
         jButton3.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagenes/Expo_17/centro.png"))); // NOI18N
+        jButton3.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton3ActionPerformed(evt);
+            }
+        });
 
         jButton4.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagenes/Expo_17/zapatos.png"))); // NOI18N
         jButton4.addActionListener(new java.awt.event.ActionListener() {
@@ -186,7 +191,12 @@ public class Seleccion_Insertar extends javax.swing.JFrame {
         Ingresar_Balones balon = new Ingresar_Balones();
         balon.setVisible(true);
         this.setVisible(false);
+        
     }//GEN-LAST:event_jButton7ActionPerformed
+
+    private void jButton3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton3ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_jButton3ActionPerformed
 
     /**
      * @param args the command line arguments

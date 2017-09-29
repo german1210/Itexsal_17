@@ -40,8 +40,8 @@ public class Inicio_1 extends javax.swing.JFrame {
 
         jLabel1.setFont(new java.awt.Font("Courier 10 Pitch", 1, 14)); // NOI18N
         jLabel1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagenes/Expo_17/icon, tienda.png"))); // NOI18N
-        jLabel1.setText("Nombre de la Tienda");
-        getContentPane().add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(60, 10, -1, -1));
+        jLabel1.setText("Full Sport");
+        getContentPane().add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(90, 10, -1, -1));
 
         jButton1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagenes/Expo_17/dinero.png"))); // NOI18N
         jButton1.setBorderPainted(false);
